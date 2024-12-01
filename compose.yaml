@@ -1,0 +1,10 @@
+services:
+  mysql:
+    image: 'mysql:latest'
+    environment:
+      - 'MYSQL_DATABASE=ruokatrackerLocal'
+      - 'MYSQL_PASSWORD=test'
+      - 'MYSQL_ROOT_PASSWORD=test'
+      - 'MYSQL_USER=ruokatracker'
+    ports:
+      - '3306:3306'
